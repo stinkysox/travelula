@@ -27,14 +27,13 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slideImagesArray.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="home-section">
       <Navbar />
-      {/* Slideshow Section (no animation on main background) */}
       <div className="images-slideshow">
         <img
           src={slideImagesArray[currentIndex]}
@@ -55,9 +54,7 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Tour Features Section */}
       <div className="tour-features">
-        {/* Feature 1: Wildlife Safari */}
         <div className="feature">
           <motion.div
             className="feature-image-container"
@@ -87,11 +84,10 @@ const Home = () => {
               in the sights and sounds of the wild on this once-in-a-lifetime
               adventure.
             </p>
-            <button>🌿 Hop on Wild Safari</button>
+            <button> Hop on Wild Safari</button>
           </motion.div>
         </div>
 
-        {/* Feature 2: Great Migration */}
         <div className="feature">
           <motion.div
             className="feature-image-container"
@@ -126,9 +122,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Tour Features Two */}
       <div className="tour-features tour-features-two">
-        {/* Feature 3: Cultural Encounters */}
         <div className="feature">
           <motion.div
             className="feature-image-container"
@@ -162,7 +156,6 @@ const Home = () => {
           </motion.div>
         </div>
 
-        {/* Feature 4: Hot Air Balloon Safari */}
         <div className="feature">
           <motion.div
             className="feature-image-container"

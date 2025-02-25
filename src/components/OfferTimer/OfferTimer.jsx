@@ -38,7 +38,6 @@ const Testimonial = () => {
           </div>
         </div>
 
-        {/* Testimonial Item 2 (Reversed layout) */}
         <div className="testimonial-item reverse">
           <div className="testimonial-item-image">
             <img
@@ -63,7 +62,6 @@ const Testimonial = () => {
           </div>
         </div>
 
-        {/* Testimonial Item 3 */}
         <div className="testimonial-item">
           <div className="testimonial-item-image">
             <img
