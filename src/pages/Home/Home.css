@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.home-section {
+  font-family: "EB Garamond", serif;
+}
+
+.images-slideshow {
+  width: 100%;
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2c3930;
+  overflow: hidden;
+  padding: 40px 20px;
+  gap: 25px;
+  text-align: center;
+}
+
+/* Slideshow Heading */
+.images-slideshow h2 {
+  color: navajowhite;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.images-slideshow p {
+  width: 75%;
+  color: white;
+  font-size: 20px; /* Increased for better readability */
+  line-height: 1.7;
+}
+
+/* Slideshow Image */
+.slide-image {
+  height: 320px;
+  width: 100%; /* Make it responsive */
+  max-width: 420px; /* Limit max width */
+  object-fit: cover;
+  border-top-left-radius: 50% 120px;
+  border-top-right-radius: 50% 120px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Hover Effect - Image Floats Up */
+.slide-image:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.tour-features {
+  min-height: 100vh;
+  background-color: #66785f;
+  width: 100%;
+  padding: 10px 0; /* Adjusted padding */
+}
+
+.tour-features-two {
+  background-color: #2c3930;
+  padding: 30px 0; /* Adjusted padding */
+}
+
+.feature {
+  height: auto; /* Allow height to adjust based on content */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.feature-image-container {
+  width: 50%;
+  height: 100%;
+}
+
+.feature-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Added border radius for aesthetics */
+  transition: transform 0.3s ease;
+}
+
+.feature-image-container img:hover {
+  transform: translateY(-10px); /* Lifts the image up on hover */
+}
+
+.feature-text-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Reduced gap for better spacing */
+  padding: 16px;
+}
+
+.feature-text-container p {
+  color: white;
+}
+
+.feature-text-container h2 {
+  color: navajowhite;
+}
+
+.feature-text-container button {
+  background: #ffcc00;
+  color: #2c3930;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  font-family: "EB Garamond", serif;
+}
+
+.feature-text-container button:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+.accommodation-section {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 40px 20px;
+}
+
+.accommodation-image-container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.accommodation-text-container p {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+
+.accommodation-section button {
+  background-color: white;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EB Garamond", serif;
+  cursor: pointer;
+}
+
+.accommodation-image-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .feature-image-container,
+  .feature-text-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .feature-text-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .images-slideshow h2 {
+    font-size: 26px;
+  }
+
+  .images-slideshow p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .accommodation-image-container {
+    width: 90%;
+  }
+}
