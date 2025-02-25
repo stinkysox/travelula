@@ -202,4 +202,8 @@
   .accommodation-image-container {
     width: 90%;
   }
+
+  .accommodation-text-container p {
+    width: 100%;
+  }
 }

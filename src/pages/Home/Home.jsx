@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./Home.css";
 import Testimonial from "../../components/OfferTimer/OfferTimer";
 import Footer from "../../components/Footer/Footer";
+import AdventureCTA from "../../components/Adventure/AdventureCTA";
 
 const slideImagesArray = [
   "https://i.postimg.cc/yY8m2hHd/group-elephants-walking-dry-grass-wilderness.jpg",
@@ -227,6 +228,7 @@ const Home = () => {
       </div>
 
       <Testimonial />
+      <AdventureCTA />
       <Footer />
     </div>
   );
